@@ -14,6 +14,11 @@ function Phrase(content){
     this.processcontent = function processcontent(){
         return this.content.toLowerCase()
     }
+
+    this.letters = function letters(){
+        console.log("content is ",this.content)
+        return this.content
+    }
     this.palindrome = function palindrome (){
         return this.processcontent() === reverse(this.processcontent())
     }
