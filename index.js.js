@@ -20,11 +20,4 @@ function Phrase(content){
 }
 
 
-function Translated(content,translation){
-    this.content = content
-    this.translation = translation
-}
-
-Translated.prototype = new Phrase()
-
-exports = {Phrase}
+module.exports = {Phrase}
